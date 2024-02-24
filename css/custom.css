@@ -20,8 +20,8 @@
 
 .box {
     padding: 5px;
-    width: 25%;
-    flex-basis: 25%;
+    width: 50%;
+    flex-basis: 50%;
     height: 400px;
     border-radius: 5px;
     overflow: hidden;
@@ -88,4 +88,22 @@
 #search:focus {
     background-color: white;
     color: black;
+}
+
+.error{
+    color: white;
+}
+
+@media only screen and (min-width: 576px) {
+    .box{
+        width: 33.3%;
+        flex-basis: 33.3%;
+    }
+}
+
+@media only screen and (min-width: 756px) {
+    .box{
+        width: 25%;
+        flex-basis: 25%;
+    }
 }
